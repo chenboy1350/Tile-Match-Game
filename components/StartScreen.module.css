@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 20px;
   background: linear-gradient(135deg, #2d1b69 0%, #6b2fa0 30%, #d63384 70%, #4ea8de 100%);
 }
 
@@ -51,4 +52,25 @@
 
 .startButton:active {
   transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .emoji {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .startButton {
+    padding: 14px 48px;
+    font-size: 1.2rem;
+  }
 }

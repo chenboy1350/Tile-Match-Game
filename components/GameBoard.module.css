@@ -1,9 +1,18 @@
 .boardWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex: 1;
-  padding: 20px;
+  overflow: hidden;
+  position: relative;
+  touch-action: none;
+  cursor: grab;
+}
+
+.boardWrapper:active {
+  cursor: grabbing;
+}
+
+.boardTransform {
+  position: absolute;
+  will-change: transform;
 }
 
 .board {
