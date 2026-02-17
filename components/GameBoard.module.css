@@ -1,0 +1,13 @@
+.boardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+}
+
+.board {
+  position: relative;
+  width: 616px;
+  height: 380px;
+}

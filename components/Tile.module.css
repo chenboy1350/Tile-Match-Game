@@ -1,0 +1,39 @@
+.tile {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.active {
+  background: linear-gradient(145deg, #ffffff, #e8e8e8);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.active:hover {
+  transform: scale(1.08);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.active:active {
+  transform: scale(0.95);
+}
+
+.blocked {
+  background: linear-gradient(145deg, #c8c8c8, #a8a8a8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: not-allowed;
+  filter: brightness(0.7) saturate(0.5);
+}
+
+.emoji {
+  font-size: 1.3rem;
+  line-height: 1;
+}
